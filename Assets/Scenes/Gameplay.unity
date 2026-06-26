@@ -221,8 +221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 5
-  SnakeBody: []
-  SnakeBodyPrefab: {fileID: 8539441013568254645, guid: 7aafd40d48b2b5e45a536cbff12b7f4d, type: 3}
+  snakeBody: []
+  snakeBodyPrefab: {fileID: 4324897371491558120, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
 --- !u!1 &514030296
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +758,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 506253271}
+  - {fileID: 7295019764311627134}
   m_Father: {fileID: 2010627908}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1843448393
@@ -856,6 +857,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &801249134065017807
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1027473354}
+    m_Modifications:
+    - target: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077574705643690022, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+      propertyPath: m_Name
+      value: SnakeBody
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+--- !u!4 &7295019764311627134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 830181123421665649, guid: 52f98dd694855c94b84d3dad250faf93, type: 3}
+  m_PrefabInstance: {fileID: 801249134065017807}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7642266591849543085
 PrefabInstance:
   m_ObjectHideFlags: 0
