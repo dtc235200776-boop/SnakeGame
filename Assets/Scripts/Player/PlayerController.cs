@@ -36,6 +36,9 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(other.gameObject);
+
+        int randomX = Random.Range(-10, 10);
+        int randomY = Random.Range(-1, 3);
+        other.transform.position = new Vector3(randomX, randomY, 0);
     }
 }
