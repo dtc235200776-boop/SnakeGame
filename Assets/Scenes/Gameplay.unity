@@ -221,6 +221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 5
+  SnakeBody: []
+  SnakeBodyPrefab: {fileID: 8539441013568254645, guid: 7aafd40d48b2b5e45a536cbff12b7f4d, type: 3}
 --- !u!1 &514030296
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,11 +609,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 603492438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0989be8dc05a5a4689753c7a31de4ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c9f9b4559db7e4478dd781a96422761, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Food
-  minBounds: {x: 0, y: 0}
-  maxBounds: {x: 0, y: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0

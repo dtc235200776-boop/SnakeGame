@@ -1,8 +1,12 @@
 using UnityEngine;
-
+using System.Collections.Generic;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
+
+    public List<Transform> SnakeBody = new List<Transform>();
+
+    public GameObject SnakeBodyPrefab;
 
     private Vector3 direction = Vector3.right;
 
@@ -40,5 +44,9 @@ public class PlayerController : MonoBehaviour
         int randomX = Random.Range(-10, 10);
         int randomY = Random.Range(-1, 3);
         other.transform.position = new Vector3(randomX, randomY, 0);
+        GameObject body = Instantiate(SnakeBodyPrefab);
+        body.transform.position = transform.position;
+        SnakeBody.Add(body.transform);
     }
+    
 }
