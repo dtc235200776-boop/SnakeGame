@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
         int randomX = Random.Range(-10, 10);
         int randomY = Random.Range(-1, 3);
         other.transform.position = new Vector3(randomX, randomY, 0);
+        GameManager.Instance.AddScore();
         GameObject body = Instantiate(snakeBodyPrefab);
         body.transform.position = transform.position;
         snakeBody.Add(body.transform);
