@@ -51,8 +51,13 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        int randomX = Random.Range(-10, 10);
-        int randomY = Random.Range(-1, 3);
+        if (other.CompareTag("Border"))
+        {
+            Debug.Log("Touch Border");
+            return;
+        }
+        int randomX = Random.Range(-11, 11);
+        int randomY = Random.Range(-6, 6);
         other.transform.position = new Vector3(randomX, randomY, 0);
         GameManager.Instance.AddScore();
         GameObject body = Instantiate(snakeBodyPrefab);
