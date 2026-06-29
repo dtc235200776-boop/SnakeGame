@@ -53,16 +53,20 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Border"))
         {
-            Debug.Log("Touch Border");
+            GameManager.Instance.GameOver();
             return;
         }
-        int randomX = Random.Range(-11, 11);
-        int randomY = Random.Range(-6, 6);
+        if (!other.CompareTag("Food"))
+        {
+            return;
+        }
+        int randomX = Random.Range(-7, 8);
+        int randomY = Random.Range(-3, 4);
         other.transform.position = new Vector3(randomX, randomY, 0);
         GameManager.Instance.AddScore();
         GameObject body = Instantiate(snakeBodyPrefab);
         body.transform.position = transform.position;
         snakeBody.Add(body.transform);
     }
-    
+
 }

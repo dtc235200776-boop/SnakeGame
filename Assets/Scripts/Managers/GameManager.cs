@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public int score = 0;
 
     public TMP_Text scoreText;
+
+    public GameObject gameOverText;
     
     public PlayerController playerController;
 
@@ -16,7 +18,10 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
     }
-
+    private void Start()
+    {
+        gameOverText.SetActive(false);
+    }
     public void AddScore()
     {
         score++;
@@ -42,5 +47,10 @@ public class GameManager : MonoBehaviour
         {
             playerController.speed = 5f;
         }
+    }
+    public void GameOver()
+    {
+        gameOverText.SetActive (true);
+        Time.timeScale = 0f;
     }
 }
